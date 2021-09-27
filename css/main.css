@@ -27,7 +27,7 @@ ul {
 }
 
 .redes-sociais ul li {
-  margin-left: 15px;
+  margin-left: 27px;
   display: inline-block;
   float: left;
   list-style: none;
@@ -54,6 +54,7 @@ ul {
   display: inline-block;
   color: #8b8b8b;
   margin-left: 15px;
+  height: 50px;
 }
 
 .menu ul li a {
@@ -61,6 +62,14 @@ ul {
   text-decoration: none;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.menu ul li a:hover {
+  color: #00bac6;
+}
+
+.menu ul li:hover {
+  border-bottom: 3px solid #00bac6;
 }
 
 .menu {
@@ -75,9 +84,9 @@ ul {
 }
 
 .busca input {
-  background-image: url('../img/icone-search.png');
+  background-image: url("../img/icone-search.png");
   background-repeat: no-repeat;
-  background-position: 95%;
+  background-position: 96%;
   margin-top: 10px;
   height: 36px;
   padding: 12px;
@@ -85,8 +94,60 @@ ul {
   border: 1px solid #d6d6d6;
 }
 
+
+button.slick-prev {
+  font-size: 0px;
+  border: none;
+  width: 25px;
+  height: 51px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url('../img/anterior.png');
+  top: 35%;
+  left: 14%;
+}
+
+button.slick-next {
+  font-size: 0px;
+  border: none;
+  width: 25px;
+  height: 51px;
+  z-index: 9;
+  background-color: transparent;
+  position: absolute;
+  background-image: url('../img/proximo.png');
+  top: 35%;
+  right: 14%;
+}
+
 .col-100 {
   width: 100%;
   float: left;
   position: relative;
+}
+
+.slick-initiaized {
+  overflow: hidden;
+}
+
+.slick-dots li  button {
+  font-size: 0px;
+  border: 5px solid #ffffff;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-dots {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  left: 22%;
+}
+
+.slick-dots li {
+  display: inline-block;
 }
